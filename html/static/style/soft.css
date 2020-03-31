@@ -282,29 +282,29 @@ main .box3 .b {
 }
 @-webkit-keyframes letfGoGo {
   0% {
-    left: -100px;
+    left: -200px;
   }
   50% {
     left: -250px;
   }
   100% {
-    left: -100px;
+    left: -200px;
   }
 }
 @-webkit-keyframes rightGoGo {
   0% {
-    right: -100px;
+    right: -200px;
   }
   50% {
     right: -250px;
   }
   100% {
-    right: -100px;
+    right: -200px;
   }
 }
 .dong div:nth-child(1) {
   position: absolute;
-  left: 0;
+  left: 200px;
   top: 1796px;
   animation: letfGoGo 10.5s infinite ease-in-out;
 }

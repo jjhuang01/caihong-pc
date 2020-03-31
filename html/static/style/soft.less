@@ -199,7 +199,6 @@ main {
 
       }
     }
-
     .right {
       height: 303px;
       width: 574px;
@@ -291,7 +290,6 @@ main {
       }
     }
   }
-
   .box3 {
     margin: 0 auto;
     margin-top: 111px;
@@ -346,14 +344,14 @@ main {
 
   @-webkit-keyframes letfGoGo {
     0% {
-      left: -100px
+      left: -200px
     }
     50% {
       left: -250px;
       //transform: rotate(1turn);
     }
     100% {
-      left: -100px;
+      left: -200px;
     }
   }
   @-webkit-keyframes rightGoGo {
@@ -361,20 +359,21 @@ main {
     //to{transform: rotate(1turn);}
 
     0% {
-      right: -100px
+      right: -200px
     }
     50% {
       right: -250px;
       //transform: rotate(1turn);
     }
     100% {
-      right: -100px;
+      right: -200px;
     }
   }
 
   div:nth-child(1) {
     position: absolute;
-    left: 0;
+
+    left: 200px;
     top: 1796px;
     animation: letfGoGo 10.5s infinite ease-in-out;
   }
