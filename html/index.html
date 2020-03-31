@@ -1,12 +1,22 @@
-<template>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet" href="./static/style/home.css">
+    <title>彩虹计划-官网</title>
+</head>
+<body>
     <div class="parent">
         <header class="home-header">
             <div class="top">
-                <h1 class="logo"><img src="../assets/img/logo.png" alt=""></h1>
+                <h1 class="logo"><img src="./static/images/logo.png" alt=""></h1>
                 <nav>
-                    <router-link :to="{name:'Home'}" class="active">网站首页</router-link>
-                    <router-link :to="{name:'Soft'}">软件下载</router-link>
-                    <router-link :to="{name:'Home'}">使用帮助</router-link>
+                    <a href="javascript:;" class="active">网站首页</a>
+                    <a href="./soft.html">软件下载</a>
+                    <a href="javascript:;">使用帮助</a>
                 </nav>
             </div>
             <div class="content">
@@ -24,7 +34,7 @@
         <main>
             <div class="box">
                 <div class="title">
-                    <h3>彩虹计划客户端下载</h3>
+                    <h3 class="gray">彩虹计划客户端下载</h3>
                     <p>Download the client</p>
                 </div>
                 <div class="inner">
@@ -34,6 +44,9 @@
                         <p>版本号V3.4（11.7M）</p>
                         <p>更新时间:2020-02-17</p>
                         <p>适用于win7、win8、win10</p>
+                        <div class="marker">
+                            <a href="http://www.baidu.com/updata.zip">立即下载</a>
+                        </div>
                     </div>
                     <div class="item">
                         <div class="top"></div>
@@ -41,6 +54,9 @@
                         <p>版本号V3.4（11.7M）</p>
                         <p>更新时间:2020-02-17</p>
                         <p>适用于win7、win8、win10</p>
+                        <div class="marker noDown">
+                            <a href="javascript:;">敬请期待</a>
+                        </div>
                     </div>
                     <div class="item">
                         <div class="top"></div>
@@ -48,6 +64,9 @@
                         <p>版本号V3.4（11.7M）</p>
                         <p>更新时间:2020-02-17</p>
                         <p>适用于win7、win8、win10</p>
+                        <div class="marker noDown">
+                            <a href="javascript:;">敬请期待</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -105,22 +124,7 @@
             <div class="dong1"></div>
             <div class="dong2"></div>
         </div>
-        <home-bottom></home-bottom>
+        <div class="bottom">Copyright © 2020 彩虹科技　版权所有：彩虹计划科技有限公司</div>
     </div>
-</template>
-
-<script>
-    // @ is an alias to /src
-    import HomeBottom from '../../src/components/bottom.vue'
-
-    export default {
-        components: {
-            HomeBottom
-        },
-        name: 'Home',
-    }
-</script>
-
-<style scoped lang="less">
-    @import "../assets/css/home.less";
-</style>
+</body>
+</html>

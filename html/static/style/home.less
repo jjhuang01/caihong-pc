@@ -1,10 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
 .parent{
   position: relative;
   overflow: hidden;
 }
 header {
   height: 616px;
-  background: #00b25f url('../img/bg.png') no-repeat center;
+  background: #00b25f url('../images/bg.png') no-repeat center;
   background-size: cover;
 
   .top {
@@ -59,7 +66,7 @@ header {
     .left {
       width: 850px;
       height: 569px;
-      background: url("../../assets/img/macbook1.png") no-repeat center 52px;
+      background: url("../images/macbook1.png") no-repeat center 52px;
       background-size: 850px 512px;
       position: relative;
 
@@ -69,12 +76,12 @@ header {
         top: 235px;
         height: 407px;
         width: 242px;
-        background: url("../../assets/img/iPhone_X.png") no-repeat center;
+        background: url("../images/iPhone_X.png") no-repeat center;
       }
     }
 
     .right {
-      background: url("../../assets/img/free.png") no-repeat right 30px;
+      background: url("../images/free.png") no-repeat right 30px;
       flex: 1;
       margin-right: 55px;
       margin-left: 14px;
@@ -152,7 +159,8 @@ main {
       height: 37px;
       font-size: 28px;
       font-family: MicrosoftYaHei;
-      color: rgba(29, 35, 45, 1);
+      color: #666;
+
       line-height: 37px;
 
     }
@@ -183,11 +191,11 @@ main {
         background: rgba(255, 255, 255, 1);
         box-shadow: 8px 8px 45px 0px rgba(0, 0, 0, 0.06);
         border-radius: 8px;
-
+        position: relative;
         .top {
           width: 384px;
           height: 120px;
-          background: rgba(238, 195, 86, 1) url("../../assets/img/pc.png") no-repeat center;
+          background: rgba(238, 195, 86, 1) url("../images/pc.png") no-repeat center;
           border-radius: 11px 11px 0px 0px;
         }
 
@@ -195,6 +203,7 @@ main {
           text-align: center;
           padding-top: 18px;
           padding-bottom: 27px;
+          color: #666;
         }
 
         p {
@@ -207,15 +216,50 @@ main {
 
         &:nth-child(2) {
           .top {
-            background: #6BDECF url("../../assets/img/web.png") no-repeat center;
+            background: #6BDECF url("../images/web.png") no-repeat center;
           }
         }
 
         &:nth-child(3) {
           .top {
-            background: #49C78C url("../../assets/img/mobile.png") no-repeat center;
+            background: #49C78C url("../images/mobile.png") no-repeat center;
           }
         }
+        .marker{
+          display: none;
+        }
+        &:hover{
+          .marker{
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 8px 8px 45px 0px rgba(0, 0, 0, 0.06);
+            border-radius: 8px;
+            background: rgba(0,0,0,0.8);
+            text-align: center;
+            line-height: 288px;
+            color: #fff;
+            font-size: 32px;
+            a{
+              border-radius: 4px;
+              color: #fff;
+              padding: 5px 15px;
+              border: 1px solid #fff;
+            }
+          }
+          .noDown{
+            a{
+              border-radius: 4px;
+              color: #999;
+              padding: 5px 15px;
+              border: 1px solid #999;
+            }
+          }
+        }
+
       }
 
     }
@@ -235,12 +279,13 @@ main {
           border-bottom: 1px solid #14B45C;
 
           &:nth-child(1) {
-            background: #F5F5F5 url("../../assets/img/shield.png") no-repeat center;
+            background: #F5F5F5 url("../images/shield.png") no-repeat center;
           }
         }
 
         h4 {
           padding-top: 30px;
+          color: #666;
         }
 
         &:nth-child(2) {
@@ -267,13 +312,13 @@ main {
 
         &:nth-child(2) {
           .top {
-            background: #F5F5F5 url("../../assets/img/Trade.png") no-repeat center;
+            background: #F5F5F5 url("../images/Trade.png") no-repeat center;
           }
         }
 
         &:nth-child(3) {
           .top {
-            background: #F5F5F5 url("../../assets/img/box.png") no-repeat center;
+            background: #F5F5F5 url("../images/box.png") no-repeat center;
           }
         }
       }
@@ -285,7 +330,7 @@ main {
 
     .inenr {
       background: #fffeff;
-      background: url("../../assets/img/iPhone_X.png") no-repeat center;
+      background: url("../images/iPhone_X.png") no-repeat center;
       background-size: 428px 716px;
       margin: 0 auto;
       height: 716px;
@@ -323,6 +368,7 @@ main {
         font-family: MicrosoftYaHei;
         color: rgba(28, 31, 40, 1);
         line-height: 24px;
+        color: #666;
       }
 
       p {
@@ -336,25 +382,25 @@ main {
       }
 
       .item1 {
-        background-image: url("../../assets/img/cpfan.png");
+        background-image: url("../images/cpfan.png");
         background-repeat: no-repeat;
         background-position: center 24px;
       }
 
       .item2 {
-        background-image: url("../../assets/img/team.png");
+        background-image: url("../images/team.png");
         background-repeat: no-repeat;
         background-position: center 24px;
       }
 
       .item3 {
-        background-image: url("../../assets/img/server.png");
+        background-image: url("../images/server.png");
         background-repeat: no-repeat;
         background-position: center 24px;
       }
 
       .item4 {
-        background-image: url("../../assets/img/feature.png");
+        background-image: url("../images/feature.png");
         background-repeat: no-repeat;
         background-position: center 24px;
       }
@@ -367,14 +413,14 @@ main {
   .dong1 {
     width: 533px;
     height: 416px;
-    background: url("../../assets/img/Oval2.png") no-repeat;
+    background: url("../images/Oval2.png") no-repeat;
     background-size: contain;
   }
 
   .dong2 {
     width: 448px;
     height: 515px;
-    background: url("../../assets/img/Oval1.png") no-repeat;
+    background: url("../images/Oval1.png") no-repeat;
     background-size: contain;
   }
 

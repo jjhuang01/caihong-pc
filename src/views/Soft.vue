@@ -27,7 +27,9 @@
                     <p>系统支持：Win 7 / Win 8 / Win10</p>
                     <p>软件大小：12M</p>
                     <p>下载次数：99999＋ 次</p>
-                    <button>立即下载</button>
+                    <button><a href="http://www.baidu.com/updata.zip">
+                        立即下载
+                    </a></button>
                 </div>
                 <div class="right"></div>
             </div>
