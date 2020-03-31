@@ -19,16 +19,16 @@
     }
     /* 设置滚动条的样式 */
     ::-webkit-scrollbar {
-        width:12px;
+        width:6px;
     }
     /* 滚动槽 */
     ::-webkit-scrollbar-track {
         -webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
-        border-radius:10px;
+        border-radius:3px;
     }
     /* 滚动条滑块 */
     ::-webkit-scrollbar-thumb {
-        border-radius:10px;
+        border-radius:3px;
         background:rgba(0,0,0,0.1);
         -webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
         background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#00b362), to(#00b362), color-stop(.6,#54DE5D));
